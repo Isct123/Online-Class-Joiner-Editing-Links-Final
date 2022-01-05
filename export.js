@@ -1,4 +1,5 @@
 var ex = document.getElementById("export");
+var save = document.getElementById("save");
 
 function download(filename, text) {
     var element = document.createElement('a');
@@ -14,5 +15,6 @@ function download(filename, text) {
   }
 
 ex.addEventListener("click", function(){
+    save.click();
     download("links_info.txt", getCookie("data"));
 })
